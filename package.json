@@ -1,0 +1,16 @@
+{
+  "name": "we-connect-backend",
+  "version": "1.0.0",
+  "description": "This project is build on top of express and node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "express"
+  ],
+  "author": "Jay Prakash",
+  "license": "ISC"
+}
