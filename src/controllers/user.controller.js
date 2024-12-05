@@ -98,7 +98,14 @@ const logOut = asyncHandler(async (req, res) => {
 })
 
 
-export { createWorker,  setUserDetails,logOut };
+const get_user_details =asyncHandler(async(req, res)=>{
+    console.log(req.user)
+
+    return res.status(200).json(new ApiResponse(200,req.user,"user fetched successfully"))
+    res.end()
+})
+
+export { createWorker,  setUserDetails,logOut,get_user_details };
 
 
 
