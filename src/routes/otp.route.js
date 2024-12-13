@@ -8,13 +8,14 @@ import {verifyJwt} from "../middlewares/verifyJwt.middleware.js";
 const router = Router()
 
 router.route('/get_otp').post(getOtp)
-
+ 
 router.route('/verify_otp').post(verifyOtp)
 
 
 router.route('/user_create_test').post(testUserCreation)
 
 router.route('/test_tokens').get(verifyJwt,(req, res)=>{
+    console.log("helllow")
     console.log(req.user)
     res.end()
 })
